@@ -1,0 +1,185 @@
+/* global css */
+:root{
+    --aColor: #009ad8;
+    --bgColor: #1E202B;
+    --mutedText: rgb(191, 193, 200);
+}
+body{
+    background-color: var(--bgColor);
+}
+
+.active, .nav-item a:hover{
+    border-radius: 50rem;
+    border: 3px solid var(--aColor) !important;
+    color: var(--aColor) !important;
+    transition: all 0.5;
+}
+.nav-link{
+    border: 3px solid transparent;
+    border-radius: 50rem;
+}
+
+.navbar .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+    border: 3px solid var(--aColor);
+    border-radius: 50rem;
+}
+
+.navbar-toggler{
+    border: 3px solid transparent;
+}
+
+.content{
+    background-image: url(./imges/imges2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+    
+}
+
+.form-control {
+    background-color: var(--bgColor);
+    border: var(--bs-border-width) solid var(--bgColor);
+}
+
+input::placeholder{
+    color: #bfc1c8 !important;
+}
+
+#button-addon2, .email-btn{
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.email-btn{
+    right: 20px;
+}
+
+.form-control:focus {
+    color:  #bfc1c8 !important;
+    background-color: var(--bgColor);
+    border-color: var(--bgColor);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+}
+
+.today, .twoDays{
+    background-color: #323544;
+}
+
+.today .card-head, .tomorrow .card-head, .twoDays .card-head{
+    background: rgba(0, 0, 0, 0.1);
+}
+header p, .today section h6, section span, .tomorrow h6, header a{
+    color: var(--mutedText);
+}
+
+.today section h3{
+    font-size: 90px;
+}
+
+.tomorrow, footer{
+    background-color: #262936;
+}
+
+footer p{
+    color: var(--mutedText);
+    font-size: 14px;
+}
+
+.socialMedia a{
+    width: 40px;
+    height: 40px;
+    background-color: #1e202b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.socialMedia a i{
+    color: #009ad8;
+}
+
+.socialMedia a:hover{
+    background-color: #009ad8;
+}
+.socialMedia a:hover i{
+    color: #fff;
+}
+
+.card-body .ico-size img{
+    width: 29px;
+}
+
+.loader {
+    color: #fff;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+  }
+  
+  /* spinner */
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 
+      2em -2em 0 0em, 3em 0 0 -1em, 
+      2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 
+      2em -2em 0 0, 3em 0 0 0.2em, 
+      2em 2em 0 0, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+       -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+       -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+       -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+  
